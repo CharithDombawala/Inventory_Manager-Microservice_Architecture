@@ -1,19 +1,19 @@
 # 🗃️ Inventory Manager (Microservices Architecture)
 
-A modular inventory management system built using microservices.  
-This system includes Product, Order, and Inventory services working independently and communicating via APIs.
+A scalable inventory management system built with microservices architecture.  
+All microservices are developed using **Spring Boot** and use **MySQL** as the database.
 
 ---
 
 ## 🧱 Architecture Overview
 
-| Service           | Description                             | Tech Stack           |
-|-------------------|-----------------------------------------|----------------------|
-| **Product Service** | Manage product catalog (CRUD operations) | Node.js + PostgreSQL |
-| **Order Service**   | Handle customer orders and payments       | Express.js + MySQL   |
-| **Inventory Service** | Track stock levels and update quantities | Python + MongoDB     |
+| Service           | Description                              | Database  | Framework    |
+|-------------------|------------------------------------------|-----------|--------------|
+| Product Service   | Manage product catalog (CRUD operations) | MySQL     | Spring Boot  |
+| Order Service     | Handle customer orders and payments       | MySQL     | Spring Boot  |
+| Inventory Service | Track stock levels and update quantities  | MySQL     | Spring Boot  |
 
-Each service runs independently and communicates over REST APIs.
+Each service runs independently with its own database and communicates via REST APIs.
 
 ---
 
@@ -21,5 +21,5 @@ Each service runs independently and communicates over REST APIs.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/inventory-manager.git
+git clone https://github.com/CharithDombawala/inventory-manager.git
 cd inventory-manager
